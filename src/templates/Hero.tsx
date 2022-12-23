@@ -1,8 +1,6 @@
 import Link from 'next/link';
 
 import { Background } from '../background/Background';
-import { Button } from '../button/Button';
-import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
@@ -12,20 +10,39 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a>GitHub</a>
+          <Link href="/imprints">
+            <a>Imprints</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <a>Sign in</a>
+          <Link href="/services">
+            <a>Services</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/resources">
+            <a>Resources</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/speaking">
+            <a>Speaking</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact-us">
+            <a>Contact Us</a>
           </Link>
         </li>
       </NavbarTwoColumns>
     </Section>
 
     <Section yPadding="pt-20 pb-32">
-      <HeroOneButton
+      <h1>
+        Handsome Bones Publishing, an electic collection of technology books and
+        fantasy novels and other works.
+      </h1>
+      {/* <HeroOneButton
         title={
           <>
             {'The modern landing page for\n'}
@@ -40,7 +57,7 @@ const Hero = () => (
             </a>
           </Link>
         }
-      />
+      /> */}
     </Section>
   </Background>
 );
