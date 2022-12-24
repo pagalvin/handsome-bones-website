@@ -39,7 +39,7 @@ const Hero = () => (
 
     <Section yPadding="pt-20 pb-32">
       <h1>
-        Handsome Bones Publishing, an electic collection of technology books and
+        Handsome Bones Publishing, an eclectic collection of technology books,
         fantasy novels and other works.
       </h1>
       {/* <HeroOneButton
