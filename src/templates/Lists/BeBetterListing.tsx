@@ -1,5 +1,6 @@
 import { VerticalFeatureRow } from '../../feature/VerticalFeatureRow';
 import { Section } from '../../layout/Section';
+import { WebSitePaths } from '../../utils/WebSitePaths';
 
 const BeBetterListing = () => (
   <Section
@@ -11,7 +12,7 @@ const BeBetterListing = () => (
       description="Be Better's Books"
       image="/assets/images/feature.svg"
       imageAlt="Be Better's Books"
-      linkToHref="/imprints/be-better/be-better-books"
+      linkToHref={WebSitePaths.beBetterBooks}
     />
     <VerticalFeatureRow
       title="Meet Our Authors"

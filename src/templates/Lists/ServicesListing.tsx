@@ -8,7 +8,7 @@ const ServicesListing = () => (
   >
     <VerticalFeatureRow
       title="Self Publishing Guidance"
-      description="Help you self publish your novel, book, etc."
+      description="Let us help you self publish your novel, book, etc."
       image="/assets/images/feature.svg"
       imageAlt="Be Better"
     />
