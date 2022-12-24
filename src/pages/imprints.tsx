@@ -1,7 +1,8 @@
 import { Base2 } from '../templates/Base2';
+import { ImprintsListing } from '../templates/Imprints';
 
 const imprints: () => JSX.Element = () => {
-  return <div>Imprints go here</div>;
+  return <ImprintsListing />;
 };
 
 const ImprintsPage = () => <Base2 contentFunc={imprints} />;
