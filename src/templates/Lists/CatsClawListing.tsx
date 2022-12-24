@@ -1,17 +1,23 @@
 import { VerticalFeatureRow } from '../../feature/VerticalFeatureRow';
 import { Section } from '../../layout/Section';
 
-const BeBetterListing = () => (
+const CatsClawListing = () => (
   <Section
-    title="Be Better Imprint"
-    description="Technology and consulting books and other materials to help you improve your craft."
+    title="Cat's Claw Imprint"
+    description="Fantasy novels and other whimsy"
   >
     <VerticalFeatureRow
       title="Books"
-      description="Be Better's Books"
+      description="Cat's Claw Books"
       image="/assets/images/feature.svg"
-      imageAlt="Be Better's Books"
-      linkToHref="/imprints/be-better/be-better-books"
+      imageAlt="Cat's Claw Books"
+    />
+    <VerticalFeatureRow
+      title="Short Stories"
+      description="Short stories for your reading pleasure."
+      image="/assets/images/feature2.svg"
+      imageAlt="Short Stories"
+      reverse
     />
     <VerticalFeatureRow
       title="Meet Our Authors"
@@ -22,7 +28,7 @@ const BeBetterListing = () => (
     />
     <VerticalFeatureRow
       title="Speaking"
-      description="We love to speak! We love to speak at user groups, conferences or even one-on-one and free of charge. Contact us if you'd like us or our authors to speak at your user group, code camp or other gathering. We will connect you with the right people to make it happen."
+      description="We love to speak! We can share our writing experience with up-coming authors and other interested parties, free of charge."
       image="/assets/images/feature2.svg"
       imageAlt="Speaking"
       reverse
@@ -30,4 +36,4 @@ const BeBetterListing = () => (
   </Section>
 );
 
-export { BeBetterListing };
+export { CatsClawListing };
