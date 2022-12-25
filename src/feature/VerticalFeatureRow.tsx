@@ -8,6 +8,7 @@ type IVerticalFeatureRowProps = {
   imageAlt: string;
   reverse?: boolean;
   linkToHref?: string;
+  leftAlignText?: boolean;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -23,6 +24,10 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
 
   const router = useRouter();
 
+  const descriptionClasses = `mt-6 text-xl leading-9 ${
+    props.leftAlignText ? 'text-left' : ''
+  }`;
+
   return (
     <div
       className={verticalFeatureClass}
@@ -35,7 +40,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     >
       <div className="w-full sm:w-1/2 text-center sm:px-6">
         <h3 className="text-3xl text-gray-900 font-semibold">{props.title}</h3>
-        <div className="mt-6 text-xl leading-9">{props.description}</div>
+        <div className={descriptionClasses}>{props.description}</div>
       </div>
 
       <div className="w-full sm:w-1/2 p-6">

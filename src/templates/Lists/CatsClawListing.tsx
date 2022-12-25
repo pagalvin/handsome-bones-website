@@ -32,6 +32,7 @@ const CatsClawListing = () => (
       image="/assets/images/feature2.svg"
       imageAlt="Speaking"
       reverse
+      leftAlignText
     />
   </Section>
 );
