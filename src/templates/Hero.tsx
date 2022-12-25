@@ -37,11 +37,35 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
-      <h1>
+    {/* <Section yPadding="pt-20 pb-32"> */}
+    <Section yPadding="pt-5 pb-5">
+      <p className="bannerHeader">
         Handsome Bones Publishing, an eclectic collection of technology books,
         fantasy novels and other works.
-      </h1>
+      </p>
+
+      <img
+        className="bannerImage"
+        height="250px"
+        width="250px"
+        src="/assets/images/skeleton1.jpg"
+        alt="That's a handsome skeleton."
+      />
+      <img
+        className="bannerImage"
+        src="/assets/images/skeleton2.jpg"
+        alt="That's a handsome skeleton."
+      />
+      <img
+        className="bannerImage"
+        src="/assets/images/skeleton3.jpg"
+        alt="That's a handsome skeleton."
+      />
+      <img
+        className="bannerImage"
+        src="/assets/images/skeleton4.jpg"
+        alt="That's a handsome skeleton."
+      />
       {/* <HeroOneButton
         title={
           <>

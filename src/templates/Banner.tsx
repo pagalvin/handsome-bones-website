@@ -1,4 +1,10 @@
-const Banner = () => null;
+import { Section } from '../layout/Section';
+
+const Banner = () => (
+  <Section>
+    <img src="/assets/skeleton1.jpg" alt="Handsome bones" />
+  </Section>
+);
 // const Banner = () => (
 //   <Section>
 //     <CTABanner
