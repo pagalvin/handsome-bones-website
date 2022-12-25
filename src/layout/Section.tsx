@@ -1,11 +1,35 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
+
+export interface LinkLabelPair {
+  linkLabel: string;
+  linkHRef: string;
+}
+
+export interface QuickLinks {
+  quickLinksLabel: string;
+  labelLinkPairs: Array<LinkLabelPair>;
+}
 
 type ISectionProps = {
   title?: string;
   description?: string;
   yPadding?: string;
   children: ReactNode;
+  quickLinks?: QuickLinks;
 };
+
+const getQuickLinksHtml = (linkData: QuickLinks) => (
+  <React.Fragment>
+    <div>
+      {linkData.quickLinksLabel}
+      {linkData.labelLinkPairs.map((aLink, i) => (
+        <a key={i} href={aLink.linkHRef}>
+          [{aLink.linkLabel}]
+        </a>
+      ))}
+    </div>
+  </React.Fragment>
+);
 
 const Section = (props: ISectionProps) => (
   <div
@@ -20,6 +44,11 @@ const Section = (props: ISectionProps) => (
         )}
         {props.description && (
           <div className="mt-4 text-xl md:px-20">{props.description}</div>
+        )}
+        {props.quickLinks && (
+          <div className="mt-4 text-xl md:px-20">
+            {getQuickLinksHtml(props.quickLinks)}
+          </div>
         )}
       </div>
     )}

@@ -13,9 +13,6 @@ const Base2 = (props: Base2Props) => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Hero />
     {props.contentFunc ? props.contentFunc() : null}
-    <div>
-      <h1>content goes here</h1>
-    </div>
     <Banner />
     <Footer />
   </div>

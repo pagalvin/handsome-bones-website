@@ -1,11 +1,13 @@
 import { VerticalFeatureRow } from '../../feature/VerticalFeatureRow';
 import { Section } from '../../layout/Section';
 import { WebSitePaths } from '../../utils/WebSitePaths';
+import { BeBetterQuickLinks } from '../QuickLinks/BeBetterQuickLinks';
 
 const BeBetterListing = () => (
   <Section
-    title="Be Better Imprint"
+    title="Be Better"
     description="Technology and consulting books and other materials to help you improve your craft."
+    quickLinks={BeBetterQuickLinks}
   >
     <VerticalFeatureRow
       title="Books"
@@ -20,6 +22,7 @@ const BeBetterListing = () => (
       image="/assets/images/feature2.svg"
       imageAlt="Meet our Authors"
       reverse
+      linkToHref={WebSitePaths.beBetterAuthors}
     />
     <VerticalFeatureRow
       title="Speaking"

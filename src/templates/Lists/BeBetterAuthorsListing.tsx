@@ -2,26 +2,32 @@ import { VerticalFeatureRow } from '../../feature/VerticalFeatureRow';
 import { Section } from '../../layout/Section';
 import { BeBetterQuickLinks } from '../QuickLinks/BeBetterQuickLinks';
 
-const BeBetterBooksListing = () => (
+const BeBetterAuthorsListing = () => (
   <Section
-    title="Be Better's Books"
+    title="Be Better's Authors"
     description="Our current and up-coming books to help you master your craft."
     quickLinks={BeBetterQuickLinks}
   >
     <VerticalFeatureRow
-      title="Yet Another Typescript Book"
-      description="Helping the today's busy developers learn TypeScript fast."
+      title="Paul Galvin"
+      description="Paul's bio"
       image="/assets/images/feature.svg"
-      imageAlt="Yet Another TypeScript Book"
+      imageAlt="What a handsome guy"
     />
     <VerticalFeatureRow
-      title="So, You Want to be a Better Consultant"
-      description="Learn what makes a good consultant a better (even best) consultant."
+      title="Poornima Neelakandan"
+      description="Poornima's bio"
       image="/assets/images/feature2.svg"
-      imageAlt="So, You want to be a Better Consultant"
+      imageAlt="What a smart cookie"
       reverse
+    />
+    <VerticalFeatureRow
+      title="Tim Donato"
+      description="Tim Donato's bio"
+      image="/assets/images/feature2.svg"
+      imageAlt="Not a bad consultant, not bad at all"
     />
   </Section>
 );
 
-export { BeBetterBooksListing };
+export { BeBetterAuthorsListing };
