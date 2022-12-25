@@ -46,12 +46,10 @@ const Hero = () => (
 
       <img
         className="bannerImage"
-        height="250px"
-        width="250px"
-        src="/assets/images/skeleton1.jpg"
-        alt="That's a handsome skeleton."
+        src="/assets/images/HandsomeBonesBanner.png"
+        alt="Those are some handsome skeletons!"
       />
-      <img
+      {/* <img
         className="bannerImage"
         src="/assets/images/skeleton2.jpg"
         alt="That's a handsome skeleton."
@@ -65,7 +63,7 @@ const Hero = () => (
         className="bannerImage"
         src="/assets/images/skeleton4.jpg"
         alt="That's a handsome skeleton."
-      />
+      /> */}
       {/* <HeroOneButton
         title={
           <>
